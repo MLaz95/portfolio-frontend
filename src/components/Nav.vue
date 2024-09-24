@@ -26,7 +26,7 @@
     nav .links{
         list-style: none;
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
         font-size: 1.5rem;
     }
 </style>
