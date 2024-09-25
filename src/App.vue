@@ -2,12 +2,14 @@
   import Nav from './components/Nav.vue'
   import Hero from './components/Hero.vue'
   import About from './components/About.vue'
+  import Skills from './components/Skills.vue'
 
   export default{
     components:{
       Nav,
       Hero,
       About,
+      Skills,
     }
   }
 
@@ -17,6 +19,7 @@
   <Nav></Nav>
   <Hero></Hero>
   <About></About>
+  <Skills></Skills>
 </template>
 
 <style scoped>
