@@ -4,33 +4,27 @@
         <h1 class="title">Skills</h1>
 
         <div class="skills-container">
+
             <div class="skill-box">
                 <h2 class="skill-sub-title">Frontend</h2>
                 <div class="skills-wrapper">
-                    <div class="skill-item">
-                        <i class="fa-brands fa-html5"></i>
-                        <div>HTML5</div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-html5"></i>
-                        <div>HTML5</div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-html5"></i>
-                        <div>HTML5</div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fa-brands fa-html5"></i>
-                        <div>HTML5</div>
+                    <div v-for="skill in frontend" class="skill-item">
+                        <i :class="skill.icon" :style="'color:' + skill.color"></i>
+                        <div>{{skill.name}}</div>
                     </div>
                 </div>
             </div>
+
             <div class="skill-box">
                 <h2 class="skill-sub-title">Backend</h2>
                 <div class="skills-wrapper">
-                    
+                    <div v-for="skill in backend" class="skill-item">
+                        <i :class="skill.icon" :style="'color:' + skill.color"></i>
+                        <div>{{skill.name}}</div>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </section>
 </template>
@@ -39,12 +33,10 @@
     .skills-container{
         display: flex;
         gap: 2rem;
+        margin-top: 3rem;
     }
 
     .skill-box{
-        /* background-color: pink; */
-        /* height: 100px; */
-        /* test */
         flex: 1;
         border-radius: 2rem;
         border: 1px solid gray;
@@ -67,7 +59,7 @@
         row-gap: 2rem;
     }
 
-    .skills-wrapper .fa-brands{
+    .skills-wrapper i{
         font-size: 4rem;
     }
 
@@ -75,3 +67,63 @@
         width: calc(100% / 3);
     }
 </style>
+
+<script>
+    export default{
+        data(){
+            return{
+                frontend: [
+                    {
+                        name:'HTML5',
+                        icon:'fa-brands fa-html5',
+                        color:'#e34f26',
+                    },
+                    {
+                        name:'CSS',
+                        icon:'fa-brands fa-css3-alt',
+                        color:'#264de4',
+                    },
+                    {
+                        name:'JavaScript',
+                        icon:'fa-brands fa-js',
+                        color:'#f0db4f',
+                    },
+                    {
+                        name:'Sass',
+                        icon:'fa-brands fa-sass',
+                        color:'#cd6d93',
+                    },
+                    {
+                        name:'Bootstrap',
+                        icon:'fa-brands fa-bootstrap',
+                        color:'#563d7c',
+                    },
+                    {
+                        name:'Vue',
+                        icon:'fa-brands fa-vuejs',
+                        color:'#42b883',
+                    },
+
+                ],
+                
+                backend:[
+                    {
+                        name:'PHP',
+                        icon:'fa-brands fa-php',
+                        color:'#474A8A',
+                    },
+                    {
+                        name:'Laravel',
+                        icon:'fa-brands fa-laravel',
+                        color:'#f05340',
+                    },
+                    {
+                        name:'MySql',
+                        icon:'fa-solid fa-database',
+                        color:'gray',
+                    },
+                ]
+            }
+        }
+    }
+</script>
