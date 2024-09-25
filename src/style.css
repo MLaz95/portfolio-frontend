@@ -49,3 +49,19 @@ a:hover{
 .btn-color-2:hover{
   background-color: black;
 }
+
+section{
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  min-height: fit-content;
+}
+
+.title{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.section__text{
+  text-align: center;
+}

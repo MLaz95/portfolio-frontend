@@ -34,12 +34,7 @@
         gap: 5rem;
     }
 
-    #profile *{
-        /* border: 1px dashed red; */
-        /* test */
-    }
-
-    .section__pic-container{
+    /* .section__pic-container{
         width: 400px;
         height: 400px;
     }
@@ -48,11 +43,7 @@
         width: 100%;
         height: 100%;
         border-radius: 50%;
-    }
-
-    .section__text{
-        text-align: center;
-    }
+    } */
 
     .section__text p{
         font-weight: 600;
@@ -62,10 +53,6 @@
     .section__text__p2{
         font-size: 1.75rem;
         margin-bottom: 1rem;
-    }
-
-    .title{
-        font-size: 3rem;
     }
 
     .btn-container{
