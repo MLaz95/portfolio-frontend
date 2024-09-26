@@ -7,7 +7,7 @@
 
 <style>
     footer{
-        height: 26vh;
+        height: 4vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;

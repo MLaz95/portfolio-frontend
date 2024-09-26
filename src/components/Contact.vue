@@ -22,7 +22,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 70vh;
+        height: 96vh;
     }
 
     .contact-container{

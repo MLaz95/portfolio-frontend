@@ -55,11 +55,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 2rem;
+        gap: 1rem;
+        padding: 0.5rem 0;
     }
 
     .project-info h2{
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .tech-container{
@@ -69,6 +70,7 @@
     }
 
     .tech{
+        font-size: 0.75rem;
         padding: 0 0.5rem;
         border: 1px solid gray;
         border-radius: 0.5rem;
