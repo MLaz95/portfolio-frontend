@@ -26,6 +26,8 @@
 }
 
 @media only screen and (max-width: 768px) {
+    
+
     section .section-container{
         margin: 5rem 0;
     }
@@ -38,6 +40,10 @@
 
     section{
         margin: 0 1rem;
+    }
+    
+    #profile #hero-svg{
+        width: 400px;
     }
 
     .section-container .section__pic-container{
