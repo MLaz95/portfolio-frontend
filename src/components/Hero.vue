@@ -1,12 +1,15 @@
 <template>
     <section id="profile">
-        <div class="section__pic-container">
+        <!-- <div class="section__pic-container">
             <img src="/src/assets/Marco_crop.jpg" alt="Marco Lazzari profile picture">
+        </div> -->
+        <div>
+            <p class="hero-text">Hello! My name is</p>
+            <h1 class="hero-title">Marco Lazzari</h1>
+            <p class="hero-text">I'm a Full-Stack Developer.</p>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Marco Lazzari</h1>
-            <p class="section__text__p2">Full-Stack Developer</p>
+
+        <div class="hero-links">
             <div class="btn-container">
                 <button class="btn btn-color-1">
                     Download CV
@@ -15,6 +18,7 @@
                     Contact Me
                 </button>
             </div>
+
             <div id="socials-container">
                 <img class="icon" src="/src/assets/github.png" alt="github">
                 <img class="icon" src="/src/assets/linkedin.png" alt="linkedin">
@@ -25,34 +29,20 @@
 
 <style>
     #profile{
-        /* background-color: pink; */
-        /* test */
         height: 85vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 5rem;
+        gap: 3rem;
     }
 
-    /* .section__pic-container{
-        width: 400px;
-        height: 400px;
+    .hero-title{
+        font-size: 6rem;
     }
 
-    .section__pic-container img{
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-    } */
-
-    .section__text p{
-        font-weight: 600;
-        color: gray;
-    }
-
-    .section__text__p2{
-        font-size: 1.75rem;
-        margin-bottom: 1rem;
+    .hero-text{
+        font-size: 3rem;
     }
 
     .btn-container{
