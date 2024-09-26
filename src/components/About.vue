@@ -7,8 +7,12 @@
                 <img src="/src/assets/Marco_crop.jpg" alt="Marco profile pic">
             </div>
             <div class="about-details-container">
-                <p class="section-text-p3">
-                    Hi! I’m Marco, a full-stack web developer based in Rome, Italy. Almost a year ago I decided to take the leap and pursue a career in tech, so I enrolled in a full-time immersive Web-Development course at Boolean.  Turns out coding is pretty fun! I love to learn new technologies and flex my problem solving skills to create interesting projects.
+                <p class="section-text-p">
+                    Hi! I’m Marco, a full-stack web developer based in Rome, Italy. Almost a year ago I decided to take the leap and pursue a career in tech, so I enrolled in a full-time immersive Web-Development course at Boolean. 
+                    <br>
+                    Turns out coding is pretty fun!
+                    <br>
+                    I love to learn new technologies and flex my problem solving skills to create interesting projects.
                 </p>
                 <p>
                     Beyond coding, I love games, travelling, cooking, and my cat!
@@ -24,7 +28,8 @@
         gap: 4rem;
         height: 80%;
         justify-content: center;
-        align-items: center
+        align-items: center;
+        margin: 0 10rem;
     }
 
     .section__pic-container{
@@ -41,9 +46,11 @@
 
     .about-details-container{
         max-width: 45%;
+        font-size: 1.3rem;
+        text-align: justify;
     }
 
-    .section-text-p3{
+    .section-text-p{
         margin-bottom: 1rem;
     }
 </style>
