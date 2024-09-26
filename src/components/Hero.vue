@@ -1,8 +1,5 @@
 <template>
     <section id="profile">
-        <!-- <div class="section__pic-container">
-            <img src="/src/assets/Marco_crop.jpg" alt="Marco Lazzari profile picture">
-        </div> -->
         <div>
             <p class="hero-text">Hello! My name is</p>
             <h1 class="hero-title">Marco Lazzari</h1>
