@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <Links></Links>
+        <!-- <Links></Links> -->
         <p>Copyright &copy; 2024 Marco Lazzari. All rights reserved.</p>
     </footer>
 </template>

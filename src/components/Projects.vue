@@ -33,7 +33,7 @@
     }
 
     .project-card{
-        height: 700px;
+        /* height: 700px; */
         /* test */
         flex: 1;
         border: 1px solid gray;
