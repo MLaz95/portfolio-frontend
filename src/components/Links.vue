@@ -1,9 +1,9 @@
 <template>
     <ul class="links">
-        <li><a href="">About</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a @click="scrollFunction('about')">About</a></li>
+        <li><a @click="scrollFunction('skills')">Skills</a></li>
+        <li><a @click="scrollFunction('projects')">Projects</a></li>
+        <li><a @click="scrollFunction('contact')">Contact</a></li>
     </ul>
 </template>
 
@@ -15,3 +15,14 @@
         font-size: 1.5rem;
     }
 </style>
+
+<script>
+    export default{
+        methods:{
+            scrollFunction(id){
+                const element = document.getElementById(id)
+                element.scrollIntoView({behavior: 'smooth'})
+            }
+        }
+    }
+</script>

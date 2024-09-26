@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="projects">
         <p class="section__text">Browse Some of My</p>
         <h1 class="title">Projects</h1>
 
