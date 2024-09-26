@@ -39,6 +39,10 @@
         border-radius: 50%;
     }
 
+    .about-details-container{
+        max-width: 45%;
+    }
+
     .section-text-p3{
         margin-bottom: 1rem;
     }
