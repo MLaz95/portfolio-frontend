@@ -3,6 +3,7 @@
   import Hero from './components/Hero.vue'
   import About from './components/About.vue'
   import Skills from './components/Skills.vue'
+  import Projects from './components/Projects.vue'
 
   export default{
     components:{
@@ -10,6 +11,7 @@
       Hero,
       About,
       Skills,
+      Projects,
     }
   }
 
@@ -20,6 +22,7 @@
   <Hero></Hero>
   <About></About>
   <Skills></Skills>
+  <Projects></Projects>
 </template>
 
 <style scoped>
