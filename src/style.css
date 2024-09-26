@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+:root{
+  --highlight: #c1121f;
+  --bg-dark: #32292F;
+}
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -19,10 +24,10 @@ a{
 }
 
 a:hover{
-  color: gray;
+  color: var(--highlight);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: gray;
+  text-decoration-color: var(--highlight);
 }
 
 .btn{
@@ -36,7 +41,7 @@ a:hover{
 }
 
 .btn-color-1, .btn-color-2{
-  border: black 0.1rem solid;
+  border: var(--bg-dark) 4px solid;
 }
 
 .btn-color-1 {
@@ -44,7 +49,7 @@ a:hover{
 }
 
 .btn-color-2, .btn-color-1:hover{
-  background-color: rgb(55, 55, 55);
+  background-color: var(--highlight);
   color: white;
 }
 
@@ -56,7 +61,6 @@ section{
   padding-top: 15vh;
   height: 85vh;
   margin: 0 10rem;
-  /* min-height: fit-content; */
 }
 
 .title{
