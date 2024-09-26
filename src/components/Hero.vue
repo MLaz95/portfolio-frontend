@@ -18,9 +18,11 @@
 
         <div class="hero-links">
             <div class="btn-container">
-                <button class="btn btn-color-1">
-                    Download CV
-                </button>
+                <a href="/src/assets/Marco.Lazzari.CV.pdf" download>
+                    <button class="btn btn-color-1">
+                        Download CV
+                    </button>
+                </a>
                 <button class="btn btn-color-1">
                     Contact Me
                 </button>

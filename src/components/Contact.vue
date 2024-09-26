@@ -11,7 +11,7 @@
             </div>
             <div class="contact-info">
                 <img class="icon" src="/src/assets/linkedin.png" alt="linkedin icon">
-                <a href="www.linkedin.com/in/marco-lazzari-6767502b9">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/marco-lazzari-6767502b9"  target="_blank">LinkedIn</a>
             </div>
         </div>
     </section>
