@@ -46,7 +46,6 @@
     }
 
     .contact-container{
-        /* margin: 1rem 0; */
         flex-direction: column-reverse;
     }
 }
