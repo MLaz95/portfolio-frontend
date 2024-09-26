@@ -1,32 +1,29 @@
 <template>
     <nav>
         <div id="logo">Marco Lazzari</div>
-        
-        <ul class="links">
-            <li><a href="">About</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
+        <Links></Links>
     </nav>
 </template>
 
 <style>
-    nav{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 15vh;
-    }
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
 
-    #logo{
-        font-size: 2rem;
-    }
-
-    nav .links{
-        list-style: none;
-        display: flex;
-        gap: 2rem;
-        font-size: 1.5rem;
-    }
+#logo {
+    font-size: 2rem;
+}
 </style>
+
+<script>
+import Links from './Links.vue'
+
+export default {
+    components: {
+        Links,
+    }
+}
+</script>
