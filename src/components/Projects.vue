@@ -4,23 +4,21 @@
         <h1 class="title">Projects</h1>
 
         <div class="projects-container">
-            <div class="project-card">
-                <img class="project-cover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg" alt="">
+            <div v-for="proj in projects" class="project-card">
+                <img class="project-cover" :src="proj.cover" alt="">
                 <div class="project-info">
-                    <h2>Cat Proj</h2>
+                    <h2>{{ proj.title }}</h2>
                     <div class="tech-container">
-                        <div class="tech">test</div>
-                        <div class="tech">test</div>
-                        <div class="tech">test</div>
+                        <div v-for="tech in proj.tech" class="tech">{{ tech }}</div>
                     </div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam necessitatibus rerum molestiae cum itaque sint natus, mollitia nostrum ratione dolores. Ea nihil at a doloremque enim facilis natus sed et?</p>
+                    <p>
+                        {{ proj.description }}
+                    </p>
                     <div class="btn-container">
-                        <div class="btn btn-color-1">Github</div>
+                        <button class="btn btn-color-1">Github</button>
                     </div>
                 </div>
             </div>
-            <div class="project-card"></div>
-            <div class="project-card"></div>
         </div>
     </section>
 </template>
@@ -82,5 +80,50 @@
         text-align: center
     }
 
-
 </style>
+
+<script>
+
+    export default{
+        data(){
+            return{
+                projects:[
+                    {
+                        cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg',
+                        title:'Cat Proj',                        
+                        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam necessitatibus rerum molestiae cum itaque sint natus, mollitia nostrum ratione dolores. Ea nihil at a doloremque enim facilis natus sed et?',
+                        link:'',
+                        tech:[
+                            'test',
+                            'test',
+                            'test',
+                        ],
+                    },
+                    {
+                        cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg',
+                        title:'Cat Proj',                        
+                        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam necessitatibus rerum molestiae cum itaque sint natus, mollitia nostrum ratione dolores. Ea nihil at a doloremque enim facilis natus sed et?',
+                        link:'',
+                        tech:[
+                            'test',
+                            'test',
+                            'test',
+                        ],
+                    },
+                    {
+                        cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg',
+                        title:'Cat Proj',                        
+                        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam necessitatibus rerum molestiae cum itaque sint natus, mollitia nostrum ratione dolores. Ea nihil at a doloremque enim facilis natus sed et?',
+                        link:'',
+                        tech:[
+                            'test',
+                            'test',
+                            'test',
+                        ],
+                    },
+                ]
+            }
+        }
+    }
+
+</script>
