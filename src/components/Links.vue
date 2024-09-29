@@ -8,12 +8,15 @@
     
     <div id="mobile-menu" ref="dropDown">
         <i @click="openMenu()" id="menu-btn" class="fa-solid fa-bars"></i>
-        <ul class="mobile-links" v-show="isMenuActive">
-            <li><a @click="scrollFunction('about')">About</a></li>
-            <li><a @click="scrollFunction('skills')">Skills</a></li>
-            <li><a @click="scrollFunction('projects')">Projects</a></li>
-            <li><a @click="scrollFunction('contact')">Contact</a></li>
-        </ul>
+
+        <Transition name="open" appear>
+            <ul class="mobile-links" v-show="isMenuActive">
+                <li><a @click="scrollFunction('about')">About</a></li>
+                <li><a @click="scrollFunction('skills')">Skills</a></li>
+                <li><a @click="scrollFunction('projects')">Projects</a></li>
+                <li><a @click="scrollFunction('contact')">Contact</a></li>
+            </ul>
+        </Transition>
     </div>
 </template>
 
@@ -33,7 +36,7 @@
     font-size: 1.5rem;
 }
 
-.mobile-links{
+.mobile-links {
     position: fixed;
     top: 1px;
     right: 1px;
@@ -49,9 +52,21 @@
     padding: 1rem;
 }
 
-.mobile-links li{
+.mobile-links li {
     padding: 0.5rem;
 }
+
+.open-enter-active,
+.open-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.open-enter-from,
+.open-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
 </style>
 
 <script>
