@@ -82,6 +82,10 @@
         z-index: 0;
     }
 
+    .swiper-pagination-bullet-active{
+        background-color: var(--highlight);
+    }
+
     .project-cover{
         width: 100%;
         border-radius: 2rem;
