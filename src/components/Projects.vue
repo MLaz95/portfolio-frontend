@@ -5,7 +5,22 @@
 
         <div class="projects-container">
             <div v-for="proj in projects" class="project-card">
-                <img class="project-cover" :src="proj.cover" alt="">
+                
+                <swiper
+                :modules="modules"
+                :slides-per-view="1"
+                :loop="true"
+                :pagination="{
+                    clickable: 'true',
+                }"
+                >
+                    <swiper-slide v-for="img in proj.covers">
+                        <img class="project-cover" :src="`/src/assets/`+ img" alt="">
+                    </swiper-slide>
+
+                </swiper>
+
+
                 <div class="project-info">
                     <h2>{{ proj.title }}</h2>
                     <div class="tech-container">
@@ -45,6 +60,12 @@
         justify-content: space-between
     }
 
+    .swiper{
+        min-width: 100%;
+        max-width: 0px;
+        z-index: 0;
+    }
+
     .project-cover{
         width: 100%;
         border-radius: 2rem;
@@ -67,6 +88,7 @@
         display: flex;
         gap: 0.5rem;
         /* margin: 1rem 0; */
+        overflow-x: auto;
     }
 
     .tech{
@@ -74,6 +96,7 @@
         padding: 0 0.5rem;
         border: 1px solid gray;
         border-radius: 0.5rem;
+        white-space: nowrap;
     }
 
 
@@ -85,13 +108,29 @@
 </style>
 
 <script>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
+
 
     export default{
+        components:{
+            Swiper,
+            SwiperSlide,
+        },
+
         data(){
             return{
                 projects:[
                     {
-                        cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg',
+                        covers:[
+                            'deliveboo-home.png',
+                            'deliveboo-menu.png',
+                            'deliveboo-pay.png',
+                            'deliveboo-plates.png',
+                        ],
                         title:'Deliveboo',                        
                         description:'Deliveboo is a mock food delivery website where customers can order food, while restaurateurs can sign up to manage their restaurant’s offerings on a back-office. Deliveboo was developed in 3 weeks in an agile group of 5 for a capstone project.',
                         link:'',
@@ -104,7 +143,11 @@
                         ],
                     },
                     {
-                        cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg',
+                        covers:[
+                            'boolflix-search.png',
+                            'boolflix-filter.png',
+                            'boolflix-info.png',
+                        ],
                         title:'Movie Search',                        
                         description:'A search tool that allows the user to look for a movie or tv show from The Movie Database (TMDB). Results can then be further filtered by selecting an available genre category. This site was developed solo in a day.',
                         link:'',
@@ -115,7 +158,11 @@
                         ],
                     },
                     {
-                        cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg',
+                        covers:[
+                            'whatsapp-home.png',
+                            'whatsapp-chat.png',
+
+                        ],
                         title:'Whatsapp Web Layout Clone',                        
                         description:'One of my earliest Vue projects! The user can filter and manage their contact list. Also whenever a message is sent each contact replies with a random cat fact! This project was developed solo over the course of an afternoon.',
                         link:'',
@@ -124,7 +171,9 @@
                             'JavaScript',
                         ],
                     },
-                ]
+                ],
+
+                modules: [Pagination]
             }
         }
     }
