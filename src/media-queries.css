@@ -41,9 +41,18 @@
     section{
         margin: 0 1rem;
     }
+
+    section#projects{
+        margin: 0 1rem;
+    }
     
     #profile #hero-svg{
-        width: 400px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    #profile .hero-text{
+        font-size: 2rem;
     }
 
     .section-container .section__pic-container{
