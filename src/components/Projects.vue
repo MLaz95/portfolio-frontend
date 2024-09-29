@@ -5,6 +5,7 @@
 
         <div class="projects-container">
             <div v-for="proj in projects" class="project-card">
+                <h2>{{ proj.title }}</h2>
                 
                 <swiper
                 :modules="modules"
@@ -22,7 +23,6 @@
 
 
                 <div class="project-info">
-                    <h2>{{ proj.title }}</h2>
                     <div class="tech-container">
                         <div v-for="tech in proj.tech" class="tech">{{ tech }}</div>
                     </div>
@@ -40,11 +40,22 @@
 
 <style>
 
+    section#projects{
+        height: 100%;
+        margin: 0;
+    }
+
     .projects-container{
         display: flex;
+        flex-direction: column;
         gap: 2rem;
 
-        margin-top: 3rem;
+        max-width: 800px;
+        margin: 3rem auto 0 auto;
+    }
+
+    .projects-container a{
+        text-align: center;
     }
 
     .project-card{
@@ -58,6 +69,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between
+    }
+
+    .project-card h2{
+        text-align: center;
+        margin-bottom: 1rem;
     }
 
     .swiper{
@@ -81,6 +97,7 @@
     }
 
     .project-info h2{
+        text-align: center;
         font-size: 1.5rem;
     }
 
@@ -97,12 +114,6 @@
         border: 1px solid gray;
         border-radius: 0.5rem;
         white-space: nowrap;
-    }
-
-
-
-    .project-info h2{
-        text-align: center
     }
 
 </style>
@@ -126,13 +137,14 @@ import { Pagination, Navigation } from 'swiper/modules';
                 projects:[
                     {
                         covers:[
+                            'deliveboo-hero.png',
                             'deliveboo-home.png',
                             'deliveboo-menu.png',
                             'deliveboo-pay.png',
                             'deliveboo-plates.png',
                         ],
                         title:'Deliveboo',                        
-                        description:'Deliveboo is a mock food delivery website where customers can order food, while restaurateurs can sign up to manage their restaurant’s offerings on a back-office. Deliveboo was developed in 3 weeks in an agile group of 5 for a capstone project.',
+                        description:'Deliveboo is a mock food delivery website. Customers can filter restaurants through categories and add food items to their cart off of a chosen restaurant’s menu. They can then review their order and complete their purchase by adding delivery information and a valid credit card. Restauranteurs can sign up to feature their restaurant on the site and get access to a back-office where they have access to order metrics and can manage which dishes are available. Deliveboo was developed in 3 weeks in an agile group of 5 for a capstone project.',
                         link:'',
                         tech:[
                             'Laravel',
@@ -149,7 +161,7 @@ import { Pagination, Navigation } from 'swiper/modules';
                             'boolflix-info.png',
                         ],
                         title:'Movie Search',                        
-                        description:'A search tool that allows the user to look for a movie or tv show from The Movie Database (TMDB). Results can then be further filtered by selecting an available genre category. This site was developed solo in a day.',
+                        description:'A simple search tool that allows the user to look for a movie or tv show from The Movie Database (TMDB). The search results can then be further filtered by selecting an available genre category. Each result displays a plot summary, genre tags, and a main cast list. This site was developed solo in a day.',
                         link:'',
                         tech:[
                             'Vue',
@@ -164,7 +176,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 
                         ],
                         title:'Whatsapp Web Layout Clone',                        
-                        description:'One of my earliest Vue projects! The user can filter and manage their contact list. Also whenever a message is sent each contact replies with a random cat fact! This project was developed solo over the course of an afternoon.',
+                        description:'This is a clone of a whatsapp web interface and one of my earliest Vue projects! The user can filter contacts by name, and delete one or add a new one. Each chat history can also be deleted, either entirely or message by message. Also when a message is sent each contact replies with a random cat fact! This project was developed solo over the course of an afternoon.',
                         link:'',
                         tech:[
                             'Vue',
