@@ -38,6 +38,10 @@
         display: none;
     }
 
+    nav #mobile-menu{
+        display: block;
+    }
+
     section{
         margin: 0 1rem;
     }
