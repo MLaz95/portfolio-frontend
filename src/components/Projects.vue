@@ -92,35 +92,36 @@
                 projects:[
                     {
                         cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg',
-                        title:'Cat Proj',                        
-                        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam necessitatibus rerum molestiae cum itaque sint natus, mollitia nostrum ratione dolores. Ea nihil at a doloremque enim facilis natus sed et?',
+                        title:'Deliveboo',                        
+                        description:'Deliveboo is a mock food delivery website where customers can order food, while restaurateurs can sign up to manage their restaurant’s offerings on a back-office. Deliveboo was developed in 3 weeks in an agile group of 5 for a capstone project.',
                         link:'',
                         tech:[
-                            'test',
-                            'test',
-                            'test',
+                            'Laravel',
+                            'Vue',
+                            'PHP',
+                            'JavaScript',
+                            'Braintree API'
                         ],
                     },
                     {
                         cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg',
-                        title:'Cat Proj',                        
-                        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam necessitatibus rerum molestiae cum itaque sint natus, mollitia nostrum ratione dolores. Ea nihil at a doloremque enim facilis natus sed et?',
+                        title:'Movie Search',                        
+                        description:'A search tool that allows the user to look for a movie or tv show from The Movie Database (TMDB). Results can then be further filtered by selecting an available genre category. This site was developed solo in a day.',
                         link:'',
                         tech:[
-                            'test',
-                            'test',
-                            'test',
+                            'Vue',
+                            'JavaScript',
+                            'TMDB API',
                         ],
                     },
                     {
                         cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg',
-                        title:'Cat Proj',                        
-                        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam necessitatibus rerum molestiae cum itaque sint natus, mollitia nostrum ratione dolores. Ea nihil at a doloremque enim facilis natus sed et?',
+                        title:'Whatsapp Web Layout Clone',                        
+                        description:'One of my earliest Vue projects! The user can filter and manage their contact list. Also whenever a message is sent each contact replies with a random cat fact! This project was developed solo over the course of an afternoon.',
                         link:'',
                         tech:[
-                            'test',
-                            'test',
-                            'test',
+                            'Vue',
+                            'JavaScript',
                         ],
                     },
                 ]
