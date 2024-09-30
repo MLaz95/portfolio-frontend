@@ -16,7 +16,7 @@
                 }"
                 >
                     <swiper-slide v-for="img in proj.covers">
-                        <img class="project-cover" :src="`/src/assets/`+ img" alt="">
+                        <img class="project-cover" :src="`/public/img/` + img" alt="">
                     </swiper-slide>
 
                 </swiper>
