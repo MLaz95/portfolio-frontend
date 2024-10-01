@@ -14,7 +14,7 @@
 
         <div class="hero-links">
             <div class="btn-container">
-                <a href="/src/assets/Marco.Lazzari.CV.pdf" download>
+                <a href="/Marco.Lazzari.CV.pdf" download>
                     <button class="btn btn-color-1">
                         Download CV
                     </button>
