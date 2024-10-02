@@ -33,8 +33,9 @@
     }
 
     .section__pic-container{
-        width: 400px;
-        height: 400px;
+        width: 50%;
+        max-width: 400px;
+        /* height: 400px; */
         flex-shrink: 0;
     }
 

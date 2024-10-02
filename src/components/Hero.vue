@@ -41,6 +41,7 @@
 <style>
 #profile {
     height: 85vh;
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
