@@ -148,7 +148,7 @@ import { Pagination, Navigation } from 'swiper/modules';
                             'deliveboo-plates.png',
                         ],
                         title:'Deliveboo',                        
-                        description:'Deliveboo is a mock food delivery website. Customers can filter restaurants through categories and add food items to their cart off of a chosen restaurant’s menu. They can then review their order and complete their purchase by adding delivery information and a valid credit card. Restauranteurs can sign up to feature their restaurant on the site and get access to a back-office where they have access to order metrics and can manage which dishes are available. Deliveboo was developed in 3 weeks in an agile group of 5 for a capstone project.',
+                        description:'Deliveboo is a mock food delivery website. Customers can filter restaurants through categories and add food items to their cart off of a chosen restaurant’s menu. They can then review their order and complete their purchase by adding delivery information and a valid credit card. Restaurateurs can sign up to feature their restaurant on the site and get access to a back-office where they have access to order metrics and can manage which dishes are available. Deliveboo was developed in 3 weeks in an agile group of 5 for a capstone project.',
                         link:'https://github.com/MLaz95/deliveboo-backoffice',
                         tech:[
                             'Laravel',
