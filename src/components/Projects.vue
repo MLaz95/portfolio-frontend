@@ -29,8 +29,11 @@
                     <p>
                         {{ proj.description }}
                     </p>
-                    <div class="btn-container">
-                        <a :href="proj.link" target="_blank"><button class="btn btn-color-1">Github</button></a>
+                    <div>
+                        <div class="btn-container">
+                            <a v-if="proj.live != ''" :href="proj.live" target="_blank"><button class="btn btn-color-1">Live Site</button></a>
+                            <a :href="proj.link" target="_blank"><button class="btn btn-color-1">Github</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,6 +153,7 @@ import { Pagination, Navigation } from 'swiper/modules';
                         title:'Deliveboo',                        
                         description:'Deliveboo is a mock food delivery website. Customers can filter restaurants through categories and add food items to their cart off of a chosen restaurant’s menu. They can then review their order and complete their purchase by adding delivery information and a valid credit card. Restaurateurs can sign up to feature their restaurant on the site and get access to a back-office where they have access to order metrics and can manage which dishes are available. Deliveboo was developed in 3 weeks in an agile group of 5 for a capstone project.',
                         link:'https://github.com/MLaz95/deliveboo-backoffice',
+                        live:'',
                         tech:[
                             'Laravel',
                             'Vue',
@@ -167,6 +171,7 @@ import { Pagination, Navigation } from 'swiper/modules';
                         title:'Movie Search',                        
                         description:'A simple search tool that allows the user to look for a movie or tv show from The Movie Database (TMDB). The search results can then be further filtered by selecting an available genre category. Each result displays a plot summary, genre tags, and a main cast list. This site was developed solo in a day.',
                         link:'https://github.com/MLaz95/vite-boolflix',
+                        live:'',
                         tech:[
                             'Vue',
                             'JavaScript',
@@ -182,11 +187,29 @@ import { Pagination, Navigation } from 'swiper/modules';
                         title:'Whatsapp Web Layout Clone',                        
                         description:'This is a clone of a whatsapp web interface and one of my earliest Vue projects! The user can filter contacts by name, and delete one or add a new one. Each chat history can also be deleted, either entirely or message by message. Also when a message is sent each contact replies with a random cat fact! This project was developed solo over the course of an afternoon.',
                         link:'https://github.com/MLaz95/vue-boolzapp',
+                        live:'',
                         tech:[
                             'Vue',
                             'JavaScript',
                         ],
                     },
+                    {
+                        covers:[
+                            'ReactBoard.png',
+                            'ReactBoardAdd.png',
+                            'ReactBoardHover.png',
+                            'ReactBoardLight.png',
+                        ],
+                        title:'React Dashboard',
+                        description:'This is my first experiment with React! It\'s a simple dashboard where you can add shortcuts to your favorite websites. The list of links is then retained with local storage. There is also a simple light/dark mode implemented wiht some CSS variables. I developed this as a way to practice with React over the course of a few days',
+                        link:'https://github.com/MLaz95/myfirstreactapp',
+                        live:'https://mlaz95.github.io/myfirstreactapp/',
+                        tech:[
+                            'React',
+                            'Javascript',
+                            'API',
+                        ]
+                    }
                 ],
 
                 modules: [Pagination]
