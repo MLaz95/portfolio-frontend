@@ -16,7 +16,9 @@
                 }"
                 >
                     <swiper-slide v-for="img in proj.covers">
-                        <img class="project-cover" :src="`/img/` + img" alt="">
+                        <a :href="`/img/` + img" target="_blank">
+                            <img class="project-cover" :src="`/img/` + img" alt="">
+                        </a>
                     </swiper-slide>
 
                 </swiper>
